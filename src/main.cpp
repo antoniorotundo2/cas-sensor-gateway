@@ -209,7 +209,7 @@ void loop() {
         display.setCursor(0,0); // set first point, where write, to first upper-left pixel
         display.printf("Node: %x\n", packet.id);
         display.printf("T: %.1f*C | H: %.1f%% \n", packet.temperature, packet.humidity);
-        display.printf("P: %.2fhPa \nQ: %.2fKOhms \n", packet.pressure, packet.gas);
+        display.printf("P: %.2fhPa \nQ: %.2f%% \n", packet.pressure, packet.gas);
         display.display();
         /* {"sensor_id" : id_sensore , "temperature" : temp , "pressure" : press , "humidity": hum , "gas" : gas} 
         */
